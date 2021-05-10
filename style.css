@@ -1,0 +1,134 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	max-height: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+h1 {
+    color: #3a241d;
+	text-align: center;
+	grid-column-start: 3;	
+   }
+
+#left-container {	
+	/*align-items: flex-start; */
+	grid-column-start: 1;
+	grid-column-end: 1;
+	width: 80%;
+	height: 100%;
+	background-color: #eee;
+	grid-row-start:1;
+	grid-row-end: 4;
+}
+
+
+#right-container {
+	/*align-items: flex-end;*/
+	grid-column-start:  5;
+	width: 80%;
+	margin-left: 20%;
+	height: 100%;
+	background-color: #eee;
+	grid-row-start:1;
+	grid-row-end: 4;	
+} 
+
+.container {
+	display: grid;
+	/*position: relative;*/
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-gap: 0px;
+
+	/*justify-content: space-between;*/
+
+} 
+
+ .plant-holder {
+	height: 4.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.plant {
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+
+#terrarium {
+	display: flex;
+}
+
+.jar-walls {
+	height: 80%;
+	justify-content: center;
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	bottom: 0.5%;
+	background: #d1e1df;
+	border-radius: 1rem;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+
+.jar-top {
+	width: 50%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 80.5%;
+	left: 25%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.jar-bottom {
+	width: 50%;
+	height: 1%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	opacity: 0.7;
+}
+
+.dirt {
+	display: flex;
+	width: 60%;
+	height: 5%;
+	background: #3a241d;
+	position: absolute;
+	border-radius: 0 0 1rem 1rem;
+	bottom: 0.5%;
+	left: 20%;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.jar-glossy-long {
+    width: 2%;
+    height: 20%;
+    bottom: 20%;
+    left: 5%;
+    border-radius: 1rem;
+    background-color:rgb(215, 247, 252);
+    position: absolute;
+
+}
+
+.jar-glossy-short {
+    width: 2%;
+    height: 5%;
+    left: 5%;
+    border-radius: 1rem;
+    background-color: rgb(215, 247, 252);
+    position: absolute;
+    bottom: 45%;
+
+}
